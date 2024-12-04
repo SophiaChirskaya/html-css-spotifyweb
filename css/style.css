@@ -1,0 +1,53 @@
+/* general rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main-block rules */
+#wrapper{
+    display: flex;
+    height: calc(100vh - 150px);
+    /* DEBUG */
+    background-color: red;
+}
+
+/* main nav */
+#wrapper nav{
+    height: 100%;
+    width: 250px;
+    /* DEBUG */
+    background-color: blueviolet;
+}
+
+/* content part */
+
+#wrapper main{
+    overflow: auto;
+    height: 100%;
+    width: calc(100% - 250px);
+    /* DEBUG */
+    background-color: green;
+}
+
+#upgrade-bar{
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+
+
+/* controller */
+#player{
+    height: 150px;
+    background-color: darkgray;
+}
