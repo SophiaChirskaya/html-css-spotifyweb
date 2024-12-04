@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
 /* main-block rules */
 #wrapper{
     display: flex;
@@ -39,9 +43,15 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.row{
+    display: flex;
+}
 
 
-
+.col{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 
 
