@@ -9,6 +9,24 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+h2, h3, h4{
+    color: white;
+}
+
+h2{
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    font-size: 2,5rem;
+}
+
+h3{
+    margin-top: 1rem;
+}
+
+h4{
+    margin-top: 1rem;
+}
+
 /* main-block rules */
 #wrapper{
     display: flex;
@@ -23,7 +41,9 @@ body{
     width: 250px;
     /* DEBUG */
     background-color: blueviolet;
+    display: flex;
 }
+
 
 /* content part */
 
@@ -41,7 +61,32 @@ body{
     position: sticky;
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
+
+#upgrade-btn{
+    height: 30px;
+    width: 180px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#upgrade-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    
+}
+
+
+
+
 
 .row{
     display: flex;
