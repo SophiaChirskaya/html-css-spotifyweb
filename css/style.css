@@ -30,7 +30,7 @@ h4{
 /* main-block rules */
 #wrapper{
     display: flex;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     /* DEBUG */
     background-color: red;
 }
@@ -41,8 +41,86 @@ h4{
     width: 250px;
     /* DEBUG */
     background-color: blueviolet;
-    display: flex;
+    
 }
+
+
+#logo-spoty{
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 70%;
+}
+
+.placeholder{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+.placeholder img{
+    width: 20%;
+    padding-left: 1rem;
+}
+
+.placeholder h3{
+    margin-left: 1rem;
+}
+
+#playlist i{
+    color: white;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+
+
+#playlist ul{
+    margin-left: 1rem;
+    list-style: none;
+    color: white;
+}
+
+#playlist h3{
+    margin-left: 1rem;
+}
+
+#download{
+    margin-left: 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+#download img{
+    width: 10%;
+    padding-right: 0.5rem;
+}
+
+#download span{
+    color: white;
+}
+
+#profile{
+    padding-left: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+#profile img{
+    width: 10%;
+    padding-right: 0.5rem;
+}
+
+
+
+
+
 
 
 /* content part */
@@ -103,6 +181,6 @@ h4{
 
 /* controller */
 #player{
-    height: 150px;
+    height: 100px;
     background-color: darkgray;
 }
