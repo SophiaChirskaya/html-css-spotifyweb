@@ -9,178 +9,237 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-h2, h3, h4{
+a{
+    text-decoration: none;
+}
+
+h2, h4, h5{
     color: white;
 }
 
-h2{
-    margin-left: 1rem;
-    margin-bottom: 3rem;
-    font-size: 2,5rem;
+.grey-text{
+    color: #787a7f;
 }
 
-h3{
-    margin-top: 1rem;
+ul{
+    list-style: none;
 }
 
-h4{
-    margin-top: 1rem;
+/* EFFETTI HOVER */
+.hover-white:hover{
+    color: #fff;
 }
+
+.hover-transform:hover{
+    transform: scale(1.1);
+}
+
+/* hover card */
+.container-img-album:hover .fa-circle-play.hover-play{
+    opacity: 1;
+}
+
+.card:hover img{
+    opacity: 0.5;
+}
+/* Hover player */
+
+.barra-ascolto:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.barra-ascolto:hover .point{
+    display: block;
+}
+
+/* Effetti active */
+.placeholder:active{
+    border-left: 2px solid greenyellow;
+    padding-left: 2px;
+}
+
+.active-bottom:active{
+    border-bottom: 2px solid greenyellow;
+    padding-bottom: 5px;
+}
+
 
 /* main-block rules */
 #wrapper{
     display: flex;
-    height: calc(100vh - 100px);
-    /* DEBUG */
-    background-color: red;
+    height: calc(100vh - 80px);
+    
 }
 
 /* main nav */
 #wrapper nav{
     height: 100%;
-    width: 250px;
-    /* DEBUG */
-    background-color: blueviolet;
-    
+    width: 200px;
+    padding: 10px;
+    background-color: #000; 
 }
 
-
-#logo-spoty{
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    width: 70%;
+.nav-container{
+    height: 150px;
 }
 
-.placeholder{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    color: white;
+#logo-spotify{
+    width: 130px;
+    margin-bottom: 15px;
 }
 
-.placeholder img{
-    width: 20%;
-    padding-left: 1rem;
+.logo-xs{
+    display: none;
 }
 
-.placeholder h3{
-    margin-left: 1rem;
+.nav-container > div{
+    position: relative;
 }
 
-#playlist i{
-    color: white;
-    font-size: 2rem;
-    padding-left: 1rem;
+/* Home, search, library icons */
+.icona-nav{
+    width: 25px;
 }
 
-
-
-#playlist ul{
-    margin-left: 1rem;
-    list-style: none;
-    color: white;
+.text-header{
+    margin-left: 5px;
+    position: absolute;
+    top: 25%;
 }
 
-#playlist h3{
-    margin-left: 1rem;
+.playlist{
+    height: calc(100% - 210px);
+    overflow: auto;
 }
 
-#download{
-    margin-left: 1rem;
-    width: 90%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    border-bottom: 1px solid white;
+.playlist > div{
+    position: relative;
 }
 
-#download img{
-    width: 10%;
-    padding-right: 0.5rem;
+/* create playlist icon*/
+.fa-square-plus{
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #787a7f;
 }
 
-#download span{
-    color: white;
+.add-playlist{
+    margin-left: 5px;
+    position: absolute;
+    top: 25%;
 }
 
-#profile{
-    padding-left: 1rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    color: white;
+#playlist{
+    font-size: 15px;
+    margin: 10px 0;
 }
 
-#profile img{
-    width: 10%;
-    padding-right: 0.5rem;
+.playlist li{
+    line-height: 25px;
+    font-size: 12px;
 }
 
+.footer-nav{
+    height: 50px;
+}
 
+.img-download{
+    width: 10px;
+}
 
+hr{
+    margin: 10px 0;
+}
 
+.fa-user{
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+    background-color: #787a7f;
+}
 
-
+.nome-utente{
+    display: inline-block;
+}
 
 /* content part */
 
 #wrapper main{
     overflow: auto;
     height: 100%;
-    width: calc(100% - 250px);
-    /* DEBUG */
-    background-color: green;
+    width: calc(100% - 200px);
+    background-color: #141922;
 }
 
-#upgrade-bar{
-    height: 100px;
-    width: 100%;
+.payoff{
+    height: 60px;
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: right;
+    justify-content: end;
     align-items: center;
+    z-index: 999;
 }
 
-#upgrade-btn{
-    height: 30px;
-    width: 180px;
+/* Upgrade button */
+
+.payoff a{
     border: 1px solid white;
-    border-radius: 10px;
-    background-color: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#upgrade-btn a{
-    text-decoration: none;
+    border-radius: 999px;
+    padding: 8px 15px;
     color: white;
-    font-size: 0.8rem;
-    
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+
 }
 
+/* Upgrade bar */
+.lista-superiore{
+    margin: 15px;
+    font-size: 10px;
+}
 
-
-
-
+/* card rules */
 .row{
     display: flex;
+    gap: 15px;
+    margin: 15px 0;
 }
 
-
-.col{
-    padding-left: 1rem;
-    padding-right: 1rem;
+.card{
+    width: calc(100% / 6;
+    color: white;
+    text-align: center;
 }
 
+.container-img-album{
+    position: relative;
+}
 
+.fa-circle-play.hover-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    opacity: 0;
+}
 
+.container-img-album img{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
 
-/* controller */
-#player{
-    height: 100px;
-    background-color: darkgray;
+.subtitle-song{
+    font-size: 10px;
+    margin: 10px 0;
+}
+
+.round-img{
+    border-radius: 999px;
 }
