@@ -112,7 +112,7 @@ ul{
 
 .playlist{
     height: calc(100% - 210px);
-    overflow: auto;
+    overflow: visible;
 }
 
 .playlist > div{
@@ -144,6 +144,8 @@ ul{
 
 .footer-nav{
     height: 50px;
+    position: absolute;
+    top: 250%;
 }
 
 .img-download{
@@ -365,4 +367,103 @@ hr{
 
 .barra-ascolto.volume{
     width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .row{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card{
+        width: 22%;
+    }
+
+    .title-song{
+        font-size: 10px;
+    }
+
+    .subtitle-song{
+        font-size: 7px;
+        margin: 5px 0;
+    }
+
+    .barra-caricamento.musica{
+        width: 70%;
+    }
+
+    .testo-in-ascolto{
+        margin-right: 10px;
+    }
+
+    .content-dx i{
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width: 568px) {
+    .card{
+        width: 45%;
+    }
+
+    .title-song{
+        font-size: 15px;
+    }
+
+    .subtitle-song{
+        font-size: 10px;
+    }
+
+    .icon-heart-folder{
+        display: block;
+    }
+
+    .content-sx span{
+        font-size: 7px;
+    }
+
+    .fa-heart,
+    .fa-folder{
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    #wrapper nav{
+        width: 50px;
+    }
+
+    .nav-container{
+        height: calc(100% - 50px);
+    }
+
+    #wrapper main{
+        width: calc(100% - 50px);
+
+    }
+
+    .logo-xs{
+        display: inline-block;
+        color: #fff;
+        width: 30px;
+        margin-bottom: 10px;
+    }
+
+    #logo-spotify,
+    .text-header,
+    .playlist,
+    .footer-nav span,
+    hr,
+    .nome-utente{
+        display: none;
+    }
+
+    .footer-nav img{
+        margin: 10px auto;
+        display: block;
+    }
+    
 }
