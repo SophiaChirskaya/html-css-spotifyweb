@@ -111,8 +111,8 @@ ul{
 }
 
 .playlist{
-    height: calc(100% - 210px);
-    overflow: visible;
+    height: calc(100% - 200px);
+    overflow: auto;
 }
 
 .playlist > div{
@@ -144,8 +144,7 @@ ul{
 
 .footer-nav{
     height: 50px;
-    position: absolute;
-    top: 250%;
+
 }
 
 .img-download{
